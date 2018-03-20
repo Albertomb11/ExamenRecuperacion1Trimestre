@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>EJERCICIO 5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <script src="Ejercicio5.js"></script>
+    <link rel="stylesheet" href="Ejercicio5.css" />
+</head>
+<body>
+<form action="https://www.google.es" onsubmit="validarFormulario();">
+    <div class="form">
+        <div>
+            <label for="nombreProyecto">Nombre del proyecto:</label>
+            <input id="nombreProyecto" onchange="validarNombre()">
+        </div>
+        <div>
+            <label for="tiempoProyecto">Duracion proyecto:</label>
+            <input id="tiempoProyecto" onchange="validarTiempo()">
+        </div>
+        <div>
+            <label for="descripcion">Descripcion:</label>
+            <input id="descripcion" onchange="validarDescripcion()">
+        </div>
+    </div>
+    <div>
+        <button id="enviar" type="submit">Enviar</button>
+    </div>
+</form>
+</body>
+</html>
